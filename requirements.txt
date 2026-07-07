@@ -1,0 +1,18 @@
+# =============================================================================
+# Simulacrum – Kaggle Capstone Project
+# File: requirements.txt
+# Install everything with:  pip install -r requirements.txt
+# All packages are free / open-source; all APIs used have free tiers.
+# =============================================================================
+
+# --- Web dashboard (app.py) --------------------------------------------------
+streamlit>=1.37.0          # UI: sidebar, live charts, expanders, st.status
+
+# --- Player Agent SDK (engine.py) --------------------------------------------
+google-generativeai>=0.8.3 # Official Gemini SDK (genai.GenerativeModel)
+
+# --- Mutant Critic SDK (engine.py) --------------------------------------------
+huggingface_hub>=0.24.0    # InferenceClient.chat_completion for Llama-3-70B
+
+# --- Data handling for the live line chart (app.py) ---------------------------
+pandas>=2.0.0              # DataFrame feeding st.line_chart
